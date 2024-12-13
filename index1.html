@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Explore Continents and Countries in the world</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="continent-list">
+        <h2>Explore Continents and Countries in the world</h2>
+        <h1>Choose a Continent</h1>
+        <ul>
+            <li><button onclick="showCountries('Africa')">Africa</button></li>
+            <li><button onclick="showCountries('North_America')">North America</button></li>
+            <li><button onclick="showCountries('Europe')">Europe</button></li>
+            <li><button onclick="showCountries('South_America')">South America</button></li>
+            <li><button onclick="showCountries('Asia')">Asia</button></li>
+            <li><button onclick="showCountries('Oceania')">Oceania</button></li>
+            <li><button onclick="showCountries('Antarctica')">Antarctica</button></li>
+        </ul>
+    </div>
+
+    <div id="country-list" style="display: none;">
+        <button onclick="goBack()">Go Back</button>
+        <h2 id="continent-name"></h2>
+        <ul id="countries"></ul>
+    </div>
+
+                   <!-- Footer Section -->
+<footer>
+    <button id="copyright-button">© 2024 ASA</button>
+</footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
